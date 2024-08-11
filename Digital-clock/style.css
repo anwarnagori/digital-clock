@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    margin-top: 100px;
+    text-align: center;
+    animation: color 3s infinite linear;
+    color: rgba(0, 0, 0, 0.7);
+}
+h2{
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 70px;
+    text-align: center;
+    animation: changecolor 3s infinite linear;
+    color: rgba(0, 0, 0, 0.8);
+}
+#content{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+#content div{
+    width: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+}
+@keyframes color {
+    0%{
+        color: rgba(0, 0, 0, 0.7);
+    }
+    25%{
+        color: rgba(234, 103, 103, 0.7);
+    }
+    50%{
+        color: rgb(128, 128, 128, 0.7);
+    }
+    75%{
+        color: rgb(218, 165, 32, 0.7);
+    }
+    100%{
+        color: rgba(88, 1, 1, 0.7);
+    }
+}
+@keyframes changecolor{
+    0%{
+        color:  rgba(0, 0, 0, 0.8);
+    }
+    50%{
+        color:  rgba(14, 255, 219, 0.8);
+    }
+    75%{
+        color:  rgba(128, 128, 128, 0.8);
+    }
+}
